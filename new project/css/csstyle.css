@@ -247,8 +247,10 @@ section{
 }
 
 .menu .box-container .box img{
-    height: 10 rem;
+    height: 150px;
+    width: 200px;
 }
+/*imagenes productos*/
 .menu .box-container .box h3{
    color:#fff;
    font-size: 2rem;
@@ -302,10 +304,12 @@ section{
 .products  .box-container .box .image img{
     height: 25rem;
 }
+/*imagenes productos mas vendidos*/
 .products  .box-container .box .content h3{
     color: #fff;
     font-size: 2.5rem;
 }
+
 .products  .box-container .box .content .stars{
     padding: 1.5rem;
 }

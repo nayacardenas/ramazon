@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/libros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/filtro.js"></script>
+    <script src="../js/javaprin.js"></script>
+    <title>libros</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../img/Logo Rmazon 2.0.jpeg" alt="logo ramazon">
+        </a>
+        <nav class="navbar">
+            <a href="menu.html">inicio</a>
+            <a href="#">tecnologia</a>
+            <a href="#">electrodomesticos</a>
+            <a href="#">living</a>
+            <a href="#">cocina</a>
+            <a href="libros.html">libros</a>
+            <a href="#">video juegos </a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+       
+
+    </header>
+    <!-- menu lateral-->
+    <aside>
+        <div class="container-sidebar">
+            <h1>Filtros</h1>
+            <div class="contenido-main">
+                <p>categoria</p>
+                <ul>
+                    <li><input name="button" type="checkbox" data-category="Aventura">Aventura</li>
+                    <li><input name ="button" type="checkbox" data-category="ciencia ficcion">ciencia ficcion</li>
+                    <li> <input name="button" value="Drama" type="checkbox" data-category="Drama">Drama </li>
+                    <li> <input name="button" value="Misterio" type="checkbox" data-category="Misterio" >Misterio </li>
+                    <li> <input name="button" value="Ciencia" type="checkbox" data-category="Ciencia " >Ciencia </li>
+                    <li> <input name="button" value="Politica" type="checkbox" data-category="Politica" >Politica </li>
+                    <li> <input name="button" value="Historia" type="checkbox" data-category="Historia" >Historia</li>
+                </ul>
+                
+            </div>
+            <div class="contenido-main">
+                <p>Idioma</p>
+                <ul>
+                <li> <input name="button" value="espanol" type="checkbox" data-language="espanol">Español</li>
+                <li> <input name="button" value="Ingles"type="checkbox" data-language="Ingles">Ingles</li>
+                <li> <input name="button" value="Aleman" type="checkbox" data-language="Aleman">Aleman</li>
+                <li> <input name="button" value="Japones" type="checkbox" data-language="Japones">Japones</li>
+                <li> <input name="button" value="Frances" type="checkbox" data-language="Frances ">Frances</li>
+                <li> <input name="button" value="Portugues" type="checkbox" data-language="Portugues">Portugues</li>
+                
+                
+                </ul>
+
+
+            </div>
+            <div class="contenido-main">
+                <p>Año</p>
+                <ul>
+                    <li><input name="button" type="checkbox" data-year="2020">2021-2023</li>
+                    <li><input name="button" type="checkbox" data-year="2010">2010-2020</li>
+                    <li><input name="button" type="checkbox" data-year="2000">2000-2009</li>
+                    <li><input name="button" type="checkbox" data-year="90">90's</li>
+                    <li><input name="button" type="checkbox" data-year="80">80's</li>
+                    
+                </ul>
+                
+
+            </div>
+
+            <div class="contenido-main">
+                <p>Precio</p>
+                <ul>
+                    <li><input name="button" type="checkbox" data-precio="20">+$20.000</li>
+                    <li><input name="button" type="checkbox" data-precio="15">$15.000-$20.000</li>
+                    <li><input name="button" type="checkbox" data-precio="10">$10.000-$15.000</li>
+                    <li><input name="button" type="checkbox" data-precio="9">-$10.000</li>
+                   
+                    
+                </ul>
+                
+                
+            
+            </div>
+        
+        </div>
+    </aside>
+    <!-- fin menu lateral-->
+    <main>
+        <section class="menu" id="menu">
+
+
+            <h1 class="heading">our <span>menu </span> </h1>
+    
+            <div class="box-container">
+                <div class="box" data-category="Aventura" data-language="ingles" data-anio="90" data-precio="10">
+                    <img src="../img/libros/Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321.jpg" title="harry potter y la piedra filosofal" alt="portada harry Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+    
+                <div class="box" data-category="Aventura" data-language="ingles">
+                    <img src="../img/libros/61royjw7ITL.jpg" title="juego de tronos cancion de hielo y fuego "alt="juego de tronos cancion de hielo y fuego">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+    
+                <div class="box" data-category="ciencia-ficcion" data-language="ingles">
+                    <img src="../img/libros/OIP.jpeg" title="Amazing Fantasy Volumen #15" alt="Amazing Fantasy Volumen #15">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+    
+                <div class="box" data-category="ciencia-ficcion" data-language="ingles">
+                    <img src="../img/libros/OIP 2.jpeg" title="Spider man volumen #800" alt="Spider man volumen #800">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+    
+                <div class="box" data-category="ciencia-ficcion" data-language="ingles">
+                    <img src="../img/libros/Injustice_AnoUno_Integral.jpg" title="Injustice Año uno" alt="Injustice Año uno">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+    
+                <div class="box" data-category="ciencia-ficcion" data-language="espanol">
+                    <img src="../img/libros/Invincible.jpg" title="Invencible volumen #1" alt="Invencible volumen #1">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+                <div class="box" data-category="ciencia-ficcion" data-language="espanol">
+                    <img src="../img/libros/theboys.jpg" title="the boys volumen #1" alt="the boys volumen #1">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+
+                <div class="box"  data-category="ciencia-ficcion" data-language="Japones">
+                    <img src="../img/libros/bokunohero.jpg" title="My hero academia tomo #1" alt="My hero academia tomo #1">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+
+                <div class="box" data-category="ciencia-ficcion" data-language="Japones">
+                    <img src="../img/libros/6djs1vq06ep51.jpg" title="Blue lock tomo #11" alt="Blue lock tomo #11">
+                    <h3>smarphone </h3>
+                    <div class="price">$569.000 <span>799.990</span></div>
+                    <a href="#" class="btn">agregar al carrito </a>
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- Pie de pagina  -->
+  <footer class="pie-pagina" style="position:absolute;">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="../img/Logo Rmazon 2.0.jpeg" alt="Logo Ramazon">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>  </h2>
+        <p> </p>
+      </div>
+      <div class="box">
+        <h2> SIGUENOS </h2>
+        <div class="redes-container">
+          <ul>
+            <li><a
+                href="https://www.facebook.com/marketplace/item/501284872117807/?ref=search&referral_code=null&referral_story_type=post&tracking=browse_serp%3Ade9458d5-3f0a-4227-93b4-8873d2141bb6"
+                class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com/ramazonoriginalnofake?igshid=ZDdkNTZiNTM=" class="instagram"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/RamazonOriginal?t=CFMO9SAKw-44t2_I9gqgHg&s=08" class="twitter"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=w7D-KyuOj_A" class="youtube"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small> © 2023 <b> Ramazon.com </b> - Todos los derechos reservados </small>
+    </div>
+  </footer>
+     
+    
+    
+</body>
+</html>

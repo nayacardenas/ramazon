@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramazon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/csstyle.css">
+    <link rel="stylesheet" href="../css/carrusel.css">
 </head>
 <body>
     <header class="header">
@@ -79,9 +83,72 @@
     </header>
    
 
-
+<br><br><br><br><br><br>
 
 <!--      -->
+<div class="container">
+    <br>
+    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#theCarousel" data-slide-to="1"></li>
+            <li data-target="#theCarousel" data-slide-to="2"></li>
+            <li data-target="#theCarousel" data-slide-to="3"></li>
+
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../img/cel1.png" alt="seccion libros" width="100" height="100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <img src="../img/cel2.png" alt="seccion tecnologia" width="600" height="424">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3> </h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/cel3.png" alt="seccion muebles" width="100" height="100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/noteslider.png.png" alt="seccion computadores " width="100" height="100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+
+            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">anterior</span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">siguiente</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
 
 <section class="menu" id="menu">
 

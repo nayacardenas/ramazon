@@ -216,8 +216,7 @@ section{
     flex:1 1 45rem;
 }
 .about .row .image  img{
-    width: 400px;
-    height: 500px;
+    width: 100%;
 }
 .about .row .content{
     flex: 1 1 45rem;
@@ -248,8 +247,9 @@ section{
 }
 
 .menu .box-container .box img{
-    height: 200px;
-    width: 180px;
+    text-align: center;
+    height: 180px;
+    width: 230px;
 }
 /*imagenes productos*/
 .menu .box-container .box h3{
@@ -374,6 +374,56 @@ section{
 
 
 
+--maps
+
+.contact .row{
+    display: flex;
+    background:var(--back);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
 
 @media(max-width:991px){
     html{

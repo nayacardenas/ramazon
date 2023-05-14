@@ -15,6 +15,11 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
 html{
     font-size:62.5% ;
     overflow-x:hidden;
@@ -247,8 +252,8 @@ section{
 }
 
 .menu .box-container .box img{
-    height: 220px;
-    width: 200px;
+    height: 250px;
+    width: 220px;
 }
 /*imagenes productos*/
 .menu .box-container .box h3{

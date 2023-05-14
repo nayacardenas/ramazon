@@ -58,6 +58,18 @@ section{
     background: var(--main-color);
     cursor: pointer;
 }
+.btn-buy{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn-buy:hover{
+    letter-spacing: .2rem;
+}
 .btn:hover{
     letter-spacing: .2rem;
 }
@@ -96,7 +108,7 @@ section{
 }
 
 #menu-btn{
-    display: none;
+    display:none;
 }
 .header .search-form{
     position: absolute;

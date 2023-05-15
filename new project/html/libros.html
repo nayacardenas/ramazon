@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/libros.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="../js/filtro.js"></script>
-    <script src="../js/javaprin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../js/carrito.js"></script>
     <title>libros</title>
 </head>
 <body>
@@ -35,81 +34,91 @@
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
         </div>
+        <div class="cart-items-container">
+         
+          
+              
+          <button class="btn-buy">comprar</button>
+      </div>
        
 
     </header>
-
+  
+      
     <main>
         <section class="menu" id="menu">
 
 
-            <h1 class="heading">our <span>menu </span> </h1>
+            <h1 class="heading">Nuestros <span>libros </span> </h1>
     
             <div class="box-container">
                 <div class="box" data-category="Aventura" data-language="ingles" data-anio="90" data-precio="10">
-                    <img src="../img/libros/Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321.jpg" title="harry potter y la piedra filosofal" alt="portada harry Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321">
-                    <h3>Harry potter y la piedra filosofal </h3>
-                    <div class="price">$569.000</div>
+                    <img src="../img/libros/Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321.jpg"class="product-image" title="harry potter y la piedra filosofal" alt="portada harry Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321">
+                    <h3 class="product-name">Harry potter y la piedra filosofal </h3>
+                    <p class="price" id="prudct-price">$14.990</p>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
     
                 <div class="box" data-category="Aventura" data-language="ingles">
                     <img src="../img/libros/61royjw7ITL.jpg" title="juego de tronos cancion de hielo y fuego "alt="juego de tronos cancion de hielo y fuego">
-                    <h3>juego de tronos cancion hielo y fuego</h3>
+                    <h3 class="product-name">juego de tronos cancion hielo y fuego</h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
     
-                <div class="box" data-category="ciencia-ficcion" data-language="ingles">
+                <div class="box"   data-category="ciencia-ficcion" data-language="ingles">
                     <img src="../img/libros/OIP.jpeg" title="Amazing Fantasy Volumen #15" alt="Amazing Fantasy Volumen #15">
-                    <h3>Amazing fantasy volumen 15</h3>
+                    <h3 class="product-name">Amazing fantasy volumen 15</h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
     
-                <div class="box" data-category="ciencia-ficcion" data-language="ingles">
+                <div class="box"  data-category="ciencia-ficcion" data-language="ingles">
                     <img src="../img/libros/OIP 2.jpeg" title="Spider man volumen #800" alt="Spider man volumen #800">
-                    <h3>The amazing spiderman #800</h3>
+                    <h3 class="product-name">The amazing spiderman #800</h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
     
-                <div class="box" data-category="ciencia-ficcion" data-language="ingles">
+                <div class="box"  data-category="ciencia-ficcion" data-language="ingles">
                     <img src="../img/libros/Injustice_AnoUno_Integral.jpg" title="Injustice Año uno" alt="Injustice Año uno">
-                    <h3>Injustice year one </h3>
+                    <h3 class="product-name">Injustice year one </h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
     
-                <div class="box" data-category="ciencia-ficcion" data-language="espanol">
+                <div class="box"   data-category="ciencia-ficcion" data-language="espanol">
                     <img src="../img/libros/Invincible.jpg" title="Invencible volumen #1" alt="Invencible volumen #1">
-                    <h3>invencible volumen 1</h3>
+                    <h3 class="product-name">invencible volumen 1</h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
-                <div class="box" data-category="ciencia-ficcion" data-language="espanol">
+                <div class="box"   data-category="ciencia-ficcion" data-language="espanol">
                     <img src="../img/libros/theboys.jpg" title="the boys volumen #1" alt="the boys volumen #1">
-                    <h3>The boys volumen 1 </h3>
+                    <h3 class="product-name">The boys volumen 1 </h3>
                     <div class="price">$569.000</div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
 
-                <div class="box"  data-category="ciencia-ficcion" data-language="Japones">
+                <div class="box"   data-category="ciencia-ficcion" data-language="Japones">
                     <img src="../img/libros/bokunohero.jpg" title="My hero academia tomo #1" alt="My hero academia tomo #1">
-                    <h3>My hero academia tomo 1 </h3>
+                    <h3 class="product-name">My hero academia  </h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
 
-                <div class="box" data-category="ciencia-ficcion" data-language="Japones">
+                <div class="box"  data-category="ciencia-ficcion" data-language="Japones">
                     <img src="../img/libros/6djs1vq06ep51.jpg" title="Blue lock tomo #11" alt="Blue lock tomo #11">
-                    <h3>blue lock tomo 11</h3>
+                    <h3 class="product-name">blue lock tomo 11</h3>
                     <div class="price">$569.000 </div>
                     <button class="btn">Agregar al Carrito</button>
                 </div>
             </div>
         </section>
     </main>
+    
+
+
      <!-- Pie de pagina  -->
   <footer class="pie-pagina" style="position:absolute;">
     <div class="grupo-1">

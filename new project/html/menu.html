@@ -147,6 +147,18 @@
 
         </div>
     </section>
+    <div class="cookies-box">
+        <div class="container-cookies">
+            <div class="parrafo">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, perferendis? Commodi dicta
+                    temporibus facilis voluptas debitis? Quas autem vitae expedita. <a href="">Politica de Cookies</a></p>
+            </div>
+            <div class="botones">
+                <button>Aceptar</button>
+                <button id="close">Cerrar</button>
+            </div>
+        </div>
+    </div>
     <!-- Pie de pagina  -->
     <footer class="pie-pagina" style="position:absolute;">
         <div class="grupo-1">
@@ -191,6 +203,14 @@
 
 
     <script src="../js/javaprin.js"></script>
+    <script>
+        const btn_close = document.querySelector('#close')
+        const cont_cookies = document.querySelector('.cookies-box')
+
+        btn_close.addEventListener('click', () => {
+            cont_cookies.style.bottom = '-200px'
+        })
+    </script>
 
 </body>
 

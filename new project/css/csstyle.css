@@ -608,26 +608,57 @@ section{
     font-size: 15px;
 }
 
+.cookies-box {
+    position: fixed;
+    bottom: 0;
+    background: #010c4c;
+    transition: all 700ms ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: -2px 0 14px 8px rgba(0, 0, 0,.5);
+}
 
+.cookies-box .container-cookies {
+    padding: 20px 0;
+    max-width: 99%;
+    display: flex;
+    align-items: center;
+}
 
+.cookies-box .container-cookies .parrafo {
 
+}
 
+.cookies-box .container-cookies .parrafo p {
+    color: #fff;
+}
 
+.cookies-box .container-cookies .parrafo p a {
+    color: #cccccc;
+}
 
+.cookies-box .container-cookies .botones {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
 
+.cookies-box .container-cookies .botones button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: all 200ms ease-in;
+}
 
+.cookies-box .container-cookies .botones button:hover{
+    color: #f00;
+    border: 2px solid #f00;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cookies-box .container-cookies .botones button:last-child{
+    margin-top: 5px;
+}

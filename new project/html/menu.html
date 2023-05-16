@@ -149,14 +149,27 @@
     </section>
     <div class="cookies-box">
         <div class="container-cookies">
-            <div class="parrafo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, perferendis? Commodi dicta
-                    temporibus facilis voluptas debitis? Quas autem vitae expedita. <a href="">Politica de Cookies</a></p>
+            <div class="paragraphs">
+                <p>Usamos cookies para mejorar su experiencia de navegación en nuestra web, para mostrarles contenido personalizado y para analizar el tráfico de nuestra web.<button id="ver_pol"> Politicas de cookies.</button></p>
             </div>
-            <div class="botones">
-                <button>Aceptar</button>
+
+            <div class="buttons">
+                <button id="aceptar_cookie">Aceptar</button>
                 <button id="close">Cerrar</button>
             </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="titulo">
+            <h2>Politicas de cookies</h2>
+            <button id="close_modal">X</button>
+        </div>
+        <div class="parrafo">
+            <p>Esta web utiliza cookies propias y de terceros para ofrecerle una mejor experiencia y servicio. Al navegar o utilizar nuestros servicios acepta el uso que hacemos de las cookies. Sin embargo, tiene la opción de impedir la generación de cookies y la eliminación de las mismas mediante la selección de la correspondiente opción en su Navegador. En caso de bloquear el uso de cookies en su navegador es posible que algunos servicios o funcionalidades de la página Web no estén disponibles.</p>
+        </div>
+        <div class="aceptar">
+            <button id="aceptar_modal">Aceptar</button>
         </div>
     </div>
     <!-- Pie de pagina  -->
@@ -203,14 +216,7 @@
 
 
     <script src="../js/javaprin.js"></script>
-    <script>
-        const btn_close = document.querySelector('#close')
-        const cont_cookies = document.querySelector('.cookies-box')
-
-        btn_close.addEventListener('click', () => {
-            cont_cookies.style.bottom = '-200px'
-        })
-    </script>
+    <script src="../js/cookies.js"></script>
 
 </body>
 

@@ -19,7 +19,7 @@
         <nav class="navbar">
             <a href="../html/menu.html">Inicio</a>
             <a href="celulares.html">Smarphones</a>
-            <a href="notebook.html">Notebook</a>
+            <a href="notebook.html">Computadores</a>
             <a href="../html/muebles.html">Living</a>
             <a href="cocina.html">Electrodomesticos</a>
             <a href="libros.html">Libros</a>
@@ -58,20 +58,16 @@
 
     <!--podria ir un carrusel -->
     <section class="about" id="about">
-        <h1 class="heading"><span>CATEG</span>ORIAS </h1>
+        <h1 class="heading"><span>Inicia </span>Sesion </h1>
         <div class="row">
             <div class="image">
-                <img src="../img/carrito.png" alt="">
+                <img src="../img/login.png" alt="">
             </div>
             <div class="content">
-                <h3>  </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro dicta officia, dolorum blanditiis
-                    architecto enim doloremque voluptate necessitatibus iusto nisi debitis eius. Error illo, maiores
-                    numquam necessitatibus nam nulla.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum aut, aspernatur explicabo enim
-                    voluptatem nisi minima soluta placeat nulla neque consectetur laboriosam unde qui architecto tempora
-                    iusto suscipit amet animi.</p>
-                <a href="#" class="btn">conoce mas </a>
+                <h3>Inicia sesión aqui o registrate si no tienes una cuenta.</h3>
+                
+                
+                <a href="login.html" class="btn">Iniciar sesión </a>
 
             </div>
 
@@ -82,7 +78,7 @@
 
 
     <section class="review" id="review">
-        <h1 class="heading"> NUESTRAS SEDES <span>EN EL MUNDO</span></h1>
+        <h1 class="heading"> Categorias <span>EN EL MUNDO</span></h1>
         <div class="box-container">
             <div class="box">
                 <img src="../img/quote-img.png" alt="" class="quote">
@@ -108,9 +104,62 @@
 
     <!--      -->
 
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contactanos</span> Aca </h1>
+        <div class="row">
+            <form action="">
+                <h3>Mapa</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.9482950648685!2d-70.5158993848027!3d-33.37241588079635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cb4d94552b95%3A0x286c0361c65c38cd!2sLAS%20CONDES%2012725!5e0!3m2!1ses-419!2scl!4v1684039345145!5m2!1ses-419!2scl"
+                    width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Nombre">
+                </div>
 
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email">
+                </div>
 
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Número">
+                </div>
+                <input type="submit" value="contacto" class="btn">
+            </form>
+
+        </div>
+    </section>
+    <div class="cookies-box">
+        <div class="container-cookies">
+            <div class="paragraphs">
+                <p>Usamos cookies para mejorar su experiencia de navegación en nuestra web, para mostrarles contenido personalizado y para analizar el tráfico de nuestra web.<button id="ver_pol"> Politicas de cookies.</button></p>
+            </div>
+
+            <div class="buttons">
+                <button id="aceptar_cookie">Aceptar</button>
+                <button id="close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="titulo">
+            <h2>Politicas de cookies</h2>
+            <button id="close_modal">X</button>
+        </div>
+        <div class="parrafo">
+            <p>Esta web utiliza cookies propias y de terceros para ofrecerle una mejor experiencia y servicio. Al navegar o utilizar nuestros servicios acepta el uso que hacemos de las cookies. Sin embargo, tiene la opción de impedir la generación de cookies y la eliminación de las mismas mediante la selección de la correspondiente opción en su Navegador. En caso de bloquear el uso de cookies en su navegador es posible que algunos servicios o funcionalidades de la página Web no estén disponibles.</p>
+        </div>
+        <div class="aceptar">
+            <button id="aceptar_modal">Aceptar</button>
+        </div>
+    </div>
+=======
    
+>>>>>>> 73f533c1cee234ccee012a1a807a5a411855bdf6
     <!-- Pie de pagina  -->
     <footer class="pie-pagina" style="position:absolute;">
         <div class="grupo-1">
@@ -155,14 +204,7 @@
 
 
     <script src="../js/javaprin.js"></script>
-    <script>
-        const btn_close = document.querySelector('#close')
-        const cont_cookies = document.querySelector('.cookies-box')
-
-        btn_close.addEventListener('click', () => {
-            cont_cookies.style.bottom = '-200px'
-        })
-    </script>
+    <script src="../js/cookies.js"></script>
 
 </body>
 

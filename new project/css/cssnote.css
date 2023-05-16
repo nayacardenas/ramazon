@@ -216,9 +216,10 @@ section{
     flex:1 1 45rem;
 }
 .about .row .image  img{
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
+/*IMAGENES DE PRODUCTOS*/
 .about .row .content{
     flex: 1 1 45rem;
     padding:2rem;
@@ -248,8 +249,8 @@ section{
 }
 
 .menu .box-container .box img{
-    height: 200px;
-    width: 180px;
+    height: 220px;
+    width: 200px;
 }
 /*imagenes productos*/
 .menu .box-container .box h3{

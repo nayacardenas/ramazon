@@ -60,7 +60,7 @@ section{
 }
 .btn-buy{
     margin-top: 1rem;
-    display: inline-block;
+    display: block;
     padding: .9rem 3rem;
     font-size: 1.7rem;
     color: #fff;
@@ -150,6 +150,49 @@ section{
     background: #fff;
     padding: 0 1.5rem;
 }
+
+.cart-container{
+    position: absolute;
+    top: 100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+.cart-container.active{
+    right: 0;
+}
+.cart-container  .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+
+}
+
+.cart-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+.cart-container .cart-item .fa-times:hover{
+    color: var(--main-color);
+}
+
+.cart-container .cart-item img{
+    height: 7rem;
+}
+
+ .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
 .header .cart-items-container.active{
     right: 0;
 }
@@ -162,6 +205,7 @@ section{
     gap: 1.5rem;
 
 }
+
 .header .cart-items-container .cart-item .fa-times{
     position: absolute;
     top: 1rem; right: 1rem;
@@ -241,6 +285,7 @@ section{
 }
 /*menu lateral*/
 .container-sidebar{
+    margin-top: 12rem;
     background-color: #0a141d;
     float: left;
     left: 0;

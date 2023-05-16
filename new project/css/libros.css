@@ -317,6 +317,13 @@ section{
     
 }
 
+.fila strong{
+    font-size: large;
+}
+.fila .cart-total{
+    font-size: large;
+}
+
 /*footer*/
 
 :root {

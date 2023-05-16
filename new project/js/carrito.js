@@ -24,7 +24,7 @@ $(document).ready(function(){
                                    '<img src="'+productImage +'" alt="">' +
                                    '<div class="content">' +
                                        '<h3>' + productName + '</h3>' +
-                                       '<div class="price">' + productPrice.toFixed(2) + '</div>' +
+                                       '<div class="price">' + productPrice.toFixed(3) + '</div>' +
                                    '</div>' +
                                '</div>';
             
@@ -75,7 +75,7 @@ $(document).ready(function(){
             $('.cart-total').text(formatPrice(cartTotal)); // esto hace que se vaya actualizando en pantalla
     
             console.log(cartItems);
-            console.log("Carrito Total: $" + cartTotal.toFixed(2));
+            console.log("Carrito Total: $" + cartTotal.toFixed(3));
         });
     }
     
@@ -88,7 +88,7 @@ $(document).ready(function(){
     
 
     function formatPrice(price) {
-        return '$' + price.toFixed(2);
+        return '$' + price.toFixed(3);
     }
     quitItem();
     comprar();

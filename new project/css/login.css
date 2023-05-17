@@ -96,7 +96,9 @@ h3::before {
     position: relative;
     margin-bottom: 40px;
 }
-
+input[type="name"],
+input[type="apellidos"],
+input[type="usuario"],
 input[type="email"],
 input[type="password"] {
     border: none;

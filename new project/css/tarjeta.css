@@ -41,7 +41,7 @@ body {
 }
 
 .tarjeta-frente {
-    background-image: url("../img/fondo.jpg");
+    background-image: url("../img/bg-tarjeta-03.jpg");
     background-size: cover;
     min-height: 330px;
     border-radius: 15px;
@@ -50,7 +50,7 @@ body {
 }
 
 .tarjeta-dorso {
-    background-image: url("../img/fondo.jpg");
+    background-image: url("../img/bg-tarjeta-03.jpg");
     background-size: cover;
     min-height: 330px;
     border-radius: 15px;

@@ -17,7 +17,7 @@ function checkInputs() {
 	const password2Value = password2.value.trim();
 	
 	if(usuarioValue === '') {
-		setErrorFor(usuario, 'No puede dejar el usuario en blanco');
+		setErrorFor(usuario, 'No puede dejar el campo en blanco');
 	} else {
 		setSuccessFor(usuario);
 	}

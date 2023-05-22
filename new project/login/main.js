@@ -6,7 +6,7 @@ const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
-	
+
 	checkInputs();
 });
 
@@ -15,32 +15,32 @@ function checkInputs() {
 	const emailValue = email.value.trim();
 	const passwordValue = password.value.trim();
 	const password2Value = password2.value.trim();
-	
-	if(usuarioValue === '') {
+
+	if (usuarioValue === '') {
 		setErrorFor(usuario, 'No puede dejar el campo en blanco');
 	} else {
 		setSuccessFor(usuario);
 	}
-	
-	if(emailValue === '') {
+
+	if (emailValue === '') {
 		setErrorFor(email, 'No puede dejar el campo en blanco.');
 	} else if (!isEmail(emailValue)) {
 		setErrorFor(email, 'No ingreso un email válido');
 	} else {
 		setSuccessFor(email);
 	}
-	
-	if(passwordValue === '') {
+
+	if (passwordValue === '') {
 		setErrorFor(password, 'No se puede dejar el campo en blanco.');
 	} else {
 		setSuccessFor(password);
 	}
-	
-	if(password2Value === '') {
+
+	if (password2Value === '') {
 		setErrorFor(password2, 'No se puede dejar el campo en blanco.');
-	} else if(passwordValue !== password2Value) {
+	} else if (passwordValue !== password2Value) {
 		setErrorFor(password2, 'contraseñas no coinciden');
-	} else{
+	} else {
 		setSuccessFor(password2);
 	}
 }

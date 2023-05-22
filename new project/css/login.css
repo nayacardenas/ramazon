@@ -123,7 +123,7 @@ input[type="password"] {
     font-family: AbeeZee;
 }
 
-.form-input:focus + label {
+.form-input:focus + label,.form-input:not(:placeholder-shown) + label {
     top: -14px;
     font-size: 12px;
     color: #666565;

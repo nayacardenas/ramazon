@@ -6,7 +6,7 @@
                 opacity: 'toggle'
             }, 600);
         });
-
+        /*
         let formRegistro = document.getElementsByName('form-input');
         for (let i = 0; i < formRegistro.length; i++) {
             formRegistro[i].addEventListener('blur', function(){
@@ -21,6 +21,7 @@
                 }
             })
         }
+        */
 
     })
 }())

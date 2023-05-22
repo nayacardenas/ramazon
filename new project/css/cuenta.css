@@ -7,12 +7,8 @@
 
 }
 *{
-    font-family: 'roboto' , sans-serif;
     margin: 0;padding: 0;
-    box-sizing: border-box;
-    outline : none; border: none;
-    text-decoration: none;
-    text-transform: capitalize;
+    box-sizing: border-box; 
     transition: .2s linear;
 }
 html{
@@ -254,16 +250,13 @@ section{
     text-align: center;
 }
 
-.content-sidebar{
-    justify-content: center;
-    border-radius: 10px;
+.container-content{
+    background-color: #0d2033;
     display: grid;
-    grid-template-columns: repeat(auto-fit,280px);
+    grid-template-columns: 20% auto;
     grid-template-rows: 1fr;
-    grid-gap:1em;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 50%;
+    grid-gap: 1em;
+    padding: 10rem 10rem 50%;
     
 }
 

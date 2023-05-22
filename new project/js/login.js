@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (function(){
     $(document).ready(function(){
         $('.alt-form').click(function(){
@@ -26,25 +25,3 @@
 
     })
 }())
-=======
-function validar() {
-    var contieneValorCatcha = 776179;
-    var catcha = document.getElementById("catcha").value;
-function cambiarClase(elIdSellama) {
-    const cambio = document.getElementById(elIdSellama).className = 'error';
-    return cambio;
-}
-if (catcha === "") {
-    cambiarClase("errorCatcha");
-    return false;
-} else if (catcha != contieneValorCatcha) {
-    cambiarClase("errorCatchaIngresoErroneo");
-    return false;
-} else if (catcha === contieneValorCatcha) {
-    cambiarClase("okCatchaOk");
-    return true;
-    //  setTimeout(esCorrecto,5000);
-
-}
-}
->>>>>>> 83c1ca62c609e70a7216466d916458688265629d

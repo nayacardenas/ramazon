@@ -38,7 +38,6 @@
 	color:rgb(1, 19, 5);
 	font-size: 13px;
 }
-<<<<<<< HEAD
 
 .form-title {
     text-align: center;
@@ -172,10 +171,4 @@ input[type="submit"]:hover {
 
 .form-content:nth-child(2) {
     display: block;
-=======
-.formatoCatcha{
-	background-color:rgb(211, 111, 18);
-	width:auto;
-	height:auto;
->>>>>>> 83c1ca62c609e70a7216466d916458688265629d
 }

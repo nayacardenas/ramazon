@@ -116,6 +116,7 @@ body {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+    cursor: pointer;
 }
 .form button a{
     background: #FFA500; 

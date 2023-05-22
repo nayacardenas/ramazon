@@ -1,53 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.formulario{
+	border: 2px white solid;
+	background-color: rgba(235, 127, 19, 0.5);
+	padding: 2%;
 }
-
-body {
-    background-image: linear-gradient(to right, #8D2707, #FF3D00);
-    width: 100%;
-    height: 100vh;
-    /* color: #fff; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial;
+.paddingOk{
+	padding: 1%;
 }
-
-.cod-container {
-    background: #fff;
-    width: 380px;
-    border-radius: 10px;
-    overflow: hidden;
+.estiloInput{
+	min-width: 254px;
+	min-height: 40px;
+	border-style: solid;
+	border-color: rgb(209, 109, 16);
+	border: 3px;
+	color: rgb(128, 77, 0);
+	size: 14px;
+	margin: 5px;
+	padding: 12px;
+	background-color: rgba(219, 126, 20, 0.5);
 }
-
-.form-header {
-    background: #021e26;
-    text-align: center;
-    padding: 30px 0 40px;
-    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
+.inputCatcha{
+	min-width: 200px;
+	min-height: 40px;
 }
-
-.form-header img {
-    vertical-align: top;
-    width: 40px;
+.ocultar{
+	display:none;
 }
-
-.form-header h1 {
-    color: #fff;
-    font-family: AbeeZee;
-    font-weight: normal;
-    margin-top: 5px;
+.error{
+	color:rgb(102, 5, 54);
+	font-size: 13px;
 }
-
-.form-header span {
-    color: #FF3D00;
+.imgDelCatcha{
+	width: 200px;
+	height: 42px;
+	margin-left:-5px;
 }
-
-.cod-form {
-    padding: 10px 40px 40px;
+.okCatcha{
+	color:rgb(1, 19, 5);
+	font-size: 13px;
 }
+<<<<<<< HEAD
 
 .form-title {
     text-align: center;
@@ -181,4 +172,10 @@ input[type="submit"]:hover {
 
 .form-content:nth-child(2) {
     display: block;
+=======
+.formatoCatcha{
+	background-color:rgb(211, 111, 18);
+	width:auto;
+	height:auto;
+>>>>>>> 83c1ca62c609e70a7216466d916458688265629d
 }

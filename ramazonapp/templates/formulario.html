@@ -1,46 +1,15 @@
+{% extends 'layouts/base.html'%}
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Formulario de contacto</title>
-    <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="stylesheet" href="../css/csstyle.css">
-  </head>
+	{% load static %}
+    {% block css %}<link rel="stylesheet" href="{% static 'css/formulario.css'%}"> {% endblock%}
+</head>
 
 
-<body>	
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/Logo Rmazon 2.0.jpeg" alt="logo ramazon">
-        </a>
-        <nav class="navbar">
-            <a href="celulares.html">Smarphones</a>
-            <a href="notebook.html">Computadores</a>
-            <a href="../html/muebles.html">Living</a>
-            <a href="cocina.html">Electrodomesticos</a>
-            <a href="libros.html">Libros</a>
-            <a href="tarjeta.html">Metodo de pago</a>
-            <a href="formulario.html">Contactanos</a>
-            <a href="../html/quienes somos .html">Sobre Nosotros </a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-
-        </div>
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-        <div class="cart-items-container">
-
-
-
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-    </header>
-  <br><br><br><br>
+<body>
+	{% block content %}
 
 	<div class="contact_form">
 
@@ -98,5 +67,6 @@
 	</div>
 <script src="../js/carrusel.js"></script>
 </body>
+{% endblock %}
 </html>
 

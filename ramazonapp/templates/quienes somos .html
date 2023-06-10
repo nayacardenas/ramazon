@@ -1,11 +1,13 @@
+{% extends 'layouts/base.html'%}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramazon </title>
+    <title>Sobre nosotros</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -17,39 +19,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="../img/Logo Rmazon 2.0.jpeg" alt="logo ramazon">
-        </a>
-        <nav class="navbar">
-            <a href="celulares.html">Smarphones</a>
-            <a href="notebook.html">Computadores</a>
-            <a href="../html/muebles.html">Living</a>
-            <a href="cocina.html">Electrodomesticos</a>
-            <a href="libros.html">Libros</a>
-            <a href="tarjeta.html">Metodo de pago</a>
-            <a href="formulario.html">Contactanos</a>
-            <a href="../html/quienes somos .html">Sobre Nosotros </a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-
-        </div>
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-        <div class="cart-items-container">
-            
-            
-            
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-    </header>
-<br><br><br><br><br><br>
+{% block content %}
     <section class="home" id="home">
         <div class="content">
             <h3> CONOCE LAS SEDES DE RAMAZON </h3>
@@ -67,7 +37,7 @@
         <h1 class="heading">COMUNIDAD <span> RAMAZON</span> </h1>
         <div class="row">
             <div class="image">
-                <img src="../img/colaboradores.png.png" alt="colaboradores">
+                <img src="{% static 'img/colaboradores.png.png'%}" alt="colaboradores">
             </div>
             <div class="content">
                 <h3> </h3>
@@ -90,49 +60,49 @@
             <h1 class="heading"> NUESTRAS SEDES <span>EN EL MUNDO</span></h1>
             <div class="box-container">
                 <div class="box">
-                    <img src="../img/sede2Chi.png" class="user" alt="SEDE ALEMANIA">
+                    <img src="{% static 'img/sede2Chi.png'%}" class="user" alt="SEDE ALEMANIA">
                     <h3>SEDE BERLIN ALEMANIA </h3>
                     <p>AVENIDA Unter den Linden</p>
 
                 </div>
                 <div class="box">
-                    <img src="../img/sedeChile.png" class="user" alt="sede Chile">
+                    <img src="{% static 'img/sedeChile.png'%}" class="user" alt="sede Chile">
                     <h3>sede SANTIAGO chile</h3>
                     <p>AVENIDA PROVIDENCIA 1225</p>
                 </div>
                 <div class="box">
-                    <img src="../img/sedeChina.png" class="user" alt="">
+                    <img src="{% static 'img/sedeChina.png'%}" class="user" alt="">
                     <h3>SEDE TOKIO JAPON </h3>
                     <p>Togoshi Ginza Shotengai</p>
 
                 </div>
                 <div class="box">
-                    <img src="../img/sedeAlemania.png" class="user" alt="SEDE REINO UNIDO">
+                    <img src="{% static 'img/sedeAlemania.png'%}" class="user" alt="SEDE REINO UNIDO">
                     <h3>SEDE BRISTOL REINO UNIDO</h3>
                     <p>CALLE Leicester SQUARE .</p>
 
                 </div>
                 <div class="box">
-                    <img src="../img/sedewashinton.png" class="user" alt="SEDE CANADA">
+                    <img src="{% static 'img/sedewashinton.png'%}" class="user" alt="SEDE CANADA">
                     <h3>SEDE VANCOUSER CANADA</h3>
                     <p>Calle Granville 343</p>
 
                 </div>
                 <div class="box">
-                    <img src="../img/sedeNex.png" class="user" alt="SEDE ESPAÑA">
+                    <img src="{% static 'img/sedeNex.png'%}" class="user" alt="SEDE ESPAÑA">
                     <h3>SEDE BARCELONA  ESPAÑA </h3>
                     <P>Gran Avenida La Rambla 899</P>
 
                 </div>
                 <div class="box">
-                    <img src="../img/sedeReino.png" class="user" alt="SEDE 2 EEUU">
+                    <img src="{% static 'img/sedeReino.png'%}" class="user" alt="SEDE 2 EEUU">
                     <h3>SEDE NUEVA YORK EUUU</h3>
                     <p>Avenida Lexington 1345</p>
 
                 </div>
 
                 <div class="box">
-                    <img src="../img/sedeItalia.png" class="user" alt="SEDE 1 EEUUU">
+                    <img src="{% static 'img/sedeItalia.png'%}" class="user" alt="SEDE 1 EEUUU">
                     <h3>SEDE WASHINTON EEUU</h3>
                     <p>avenida Independencia 557</p>
 
@@ -140,7 +110,7 @@
 
 
                 <div class="box">
-                    <img src="../img/sedeEspaña.png" class="user" alt="SEDE ITALIA">
+                    <img src="{% static 'img/sedeEspaña.png'%}" class="user" alt="SEDE ITALIA">
                     <h3>SEDE ROMA  ITALIA</h3>
                     <p>Via Giovan Battista Zannoni 73</p>
 
@@ -164,6 +134,7 @@
     
             </div>
         </section>
+{% endblock %}
 
         <!-- Pie de pagina  -->
     <footer class="pie-pagina" style="position:absolute;">

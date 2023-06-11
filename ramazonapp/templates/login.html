@@ -21,7 +21,7 @@
                 <form name="Registro" class="cod-form">
                 <form name="Login" class="cod-form" id="login">
 
-            <form name="Login" class="cod-form" id="Login" >
+            <form name="Login" class="cod-form" id="Login" action="login/" method="post">
                 <div class="form-title">
                     <h3>Iniciar Sesión</h3>
                 </div>
@@ -39,47 +39,11 @@
                 </div>
                 <div class="input-group">
                     <input type="submit" class="form-input" value="Iniciar Sesión">
-                    <p>No tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                    <p>No tienes cuenta? <a href="registro" class="alt-form">Ingresa aquí</a></p>
                 </div>   
             </form>
         </div>
         
-        <div class="form-content">
-            <form name="Registro" class="cod-form" id="Registro">
-                <div class="form-title">
-                    <h3>Regístrate </h3>
-                </div>
-                
-                <div class="input-group">
-                    <input type="name" class="form-input" name="form-input" id="reg-name" required autofocus>
-                    <label class="label" for="reg-name">Nombres</label>
-                </div>
-                <div class="input-group">
-                    <input type="apellidos" class="form-input" name="form-input" id="reg-apellidos" required>
-                    <label class="label" for="reg-apellidos">Apellidos</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" class="form-input" name="form-input" id="reg-correo" required>
-                    <label class="label" for="reg-correo">Correo</label>
-                </div>
-                <div class="input-group">
-                    <input type="password" class="form-input" name="form-input" id="reg-pass" required>
-                    <label class="label" for="reg-pass">Contraseña</label>
-                </div>
-                <div class="input-group">
-                    <input type="password" class="form-input" name="form-input" id="reg-rep-pass"required>
-                    <label class="label" for="reg-rep-pass">Repetir Contraseña</label>
-                </div>
-
-                <div class="input-group">
-                    <input type="submit" class="form-input" value="Registrate">
-                    <p>Ya tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
-                    <p>Ya tienes cuenta? <a href="login.html" class="alt-form">Ingresa aquí</a></p>
-                </div>
-
-            </form>
-
-        </div>
     </div>
 </body>
 </html>

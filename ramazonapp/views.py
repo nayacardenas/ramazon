@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
 
 # Create your views here.
 def viewIndex(request):
@@ -18,3 +19,7 @@ def viewBooks(request):
 
 def viewLogin(request):
     return render(request,'login.html')
+
+def viewRegistro(request):
+    return render(request,'registro.html',)
+

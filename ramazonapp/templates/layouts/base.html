@@ -22,10 +22,10 @@
             <a href="notebook.html">Computadores</a>
             <a href="../html/muebles.html">Living</a>
             <a href="cocina.html">Electrodomesticos</a>
-            <a href="libros">Libros</a>
-            <a href="tarjeta">Metodo de pago</a>
-            <a href="formulario">Contactanos</a>
-            <a href="sobreNosotros">Sobre Nosotros </a>
+            <a href="{% url 'libros'%}">Libros</a>
+            <a href="{% url 'tarjeta'%}">Metodo de pago</a>
+            <a href="{% url 'formulario'%}">Contactanos</a>
+            <a href="{% url 'sobreNosotros'%}">Sobre Nosotros </a>
         </nav>
         <div class="icons">
             <div class="fas fa-search" id="search-btn"></div>

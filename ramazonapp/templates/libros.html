@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block script %}
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="../js/carrito.js"></script>
-    <script src="../js/filtro.js"></script>
+    <script src="{% static 'js/carrito.js'%}"></script>
+    <script src="{% static 'js/filtro.js'%}"></script>
     {% endblock %}
     <title>libros</title>
 
@@ -38,7 +39,7 @@
         <section class="menu" id="menu">
 
 
-              {% load static %}
+            
               <div class="box-container">
                 <div class="box" data-category="libro">
                     <img src="{% static 'img/libros/Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321.jpg'%}" class="product-image" title="harry potter y la piedra filosofal" alt="portada harry Harry-Potter-y-la-piedra-filosofal-Ravenclaw">
@@ -52,8 +53,7 @@
                     <h3 class="product-name">juego de tronos libro 1</h3>
                     <div class="price">$10.000 </div>
                     <button class="btn">Agregar al Carrito</button>
-                </div>
-               
+                </div>             
                 <div class="box"   data-category="comic" >
                     <img src="{% static 'img/libros/OIP.jpeg'%}" class="product-image" title="Amazing Fantasy Volumen #15" alt="Amazing Fantasy Volumen #15">
                     <h3 class="product-name">Amazing fantasy volumen 15</h3>

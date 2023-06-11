@@ -15,3 +15,6 @@ def viewCard(request):
 
 def viewBooks(request):
     return render(request,'libros.html')
+
+def viewLogin(request):
+    return render(request,'login.html')

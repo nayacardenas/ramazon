@@ -27,7 +27,7 @@
             <div class="content">
                 <h3>Inicia sesión aqui o registrate si no tienes una cuenta.</h3>
 
-                <a href="../login/index.html" class="btn">Iniciar sesión </a>
+                <a href="login" class="btn">Iniciar sesión </a>
 
             </div>
 
@@ -35,7 +35,7 @@
     </section>
     {% endblock %}
 
-    
+    {% block cookies%}
     <!--      -->
     <div class="cookies-box">
         <div class="container-cookies">
@@ -68,6 +68,7 @@
             <button id="aceptar_modal">Aceptar</button>
         </div>
     </div>
+    {% endblock %}
 
     {% block script %}
     <script src="../js/javaprin.js"></script>

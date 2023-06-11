@@ -7,6 +7,7 @@ urlpatterns = [
     path('formulario',views.viewForm, name='formulario'),
     path('tarjeta/',views.viewCard, name='tarjeta'),
     path('libros',views.viewBooks, name='libros'),
+    path('login/',views.viewLogin,name = 'login')
 
 
 ]

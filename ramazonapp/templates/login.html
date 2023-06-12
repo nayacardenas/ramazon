@@ -25,10 +25,7 @@
                 <div class="form-title">
                     <h3>Iniciar Sesión</h3>
                 </div>
-                <div class="input-group">
-                    <input type="usuario" class="form-input" name="form-input" id="usuario" required autofocus>
-                    <label class="label" for="usuario">Usuario</label>
-                </div>
+                
                 <div class="input-group">
                     <input type="email" class="form-input" name="form-input" id="correo" required>
                     <label class="label" for="correo">Correo Electronico</label>
@@ -39,7 +36,7 @@
                 </div>
                 <div class="input-group">
                     <input type="submit" class="form-input" value="Iniciar Sesión">
-                    <p>No tienes cuenta? <a href="registro" class="alt-form">Ingresa aquí</a></p>
+                    <p>No tienes cuenta? <a href="{% url 'registro'%}" class="alt-form">Ingresa aquí</a></p>
                 </div>   
             </form>
         </div>

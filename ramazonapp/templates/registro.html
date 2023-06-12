@@ -19,7 +19,8 @@
             </div>
         
         <div class="form-content">
-            <form name="Registro" class="cod-form" id="Registro">
+            <form name="Registro" class="cod-form" id="Registro" action="{% url 'login'%}" method="post">
+                {% csrf_token %}
                 <div class="form-title">
                     <h3>Regístrate </h3>
                 </div>
@@ -47,7 +48,7 @@
 
                 <div class="input-group">
                     <input type="submit" class="form-input" value="Registrate">
-                    <p>Ya tienes cuenta? <a href="login" class="alt-form">Ingresa aquí</a></p>
+                    <p>Ya tienes cuenta? <a href="{% url 'login'%}" class="alt-form">Ingresa aquí</a></p>
                 </div>
 
             </form>

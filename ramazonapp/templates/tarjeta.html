@@ -1,52 +1,21 @@
+{% extends 'layouts/base.html'%}
 <!doctype html>
 <html  lang="es">
 <head>
-	<meta charset="utf-8"/>
-	<link href="../css/tarjeta.css" rel="stylesheet" type="text/css" media="screen"/>
+	{% load static %}
 	<title>tarjeta</title>
-	<link rel="icon" href="../img\chip.png" sizes="36x36" type="image/jpg"> 
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+	{% block css %}
+	<link href="{% static 'css/tarjeta.css'%}" rel="stylesheet" type="text/css" media="screen"/>
+	<link rel="icon" href="{% static 'img\chip.png'%}" sizes="36x36" type="image/jpg"> 
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/csstyle.css">
-    <link rel="icon" type="image/x-icon" href="../img/Logo Rmazon 2.0.png">
+	{% endblock %}
 </head>
 
 <body>
-	<header class="header">
-        <a href="#" class="logo">
-            <img src="../img/Logo Rmazon 2.0.jpeg" alt="logo ramazon">
-        </a>
-        <nav class="navbar">
-            <a href="celulares.html">Smarphones</a>
-            <a href="notebook.html">Computadores</a>
-            <a href="../html/muebles.html">Living</a>
-            <a href="cocina.html">Electrodomesticos</a>
-            <a href="libros.html">Libros</a>
-            <a href="tarjeta.html">Metodo de pago</a>
-            <a href="formulario.html">Contactanos</a>
-            <a href="../html/quienes somos .html">Sobre Nosotros </a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-
-        </div>
-        <div class="search-form">
-            <input type="search" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </div>
-        <div class="cart-items-container">
-
-
-
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-    </header>
-	<br><br><br><br><br><br>
-
+{% block content %}
 	<div class="contenedor">
 
 		<section id='tarjeta' class="tarjeta">
@@ -134,9 +103,10 @@
 		</form>
 
 	</div>
-
+{% endblock %}
+	{% block script %}
 	<script src="https://kit.fontawesome.com/57a2282fd9.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="../js/tarjeta.js"></script>	
-    
+	<script type="text/javascript" src="{% static 'js/tarjeta.js'%}"></script>	
+    {% endblock %}
 </body>
 </html>

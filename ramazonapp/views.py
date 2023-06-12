@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
+from django.shortcuts import HttpResponse,redirect
 
 # Create your views here.
 def viewIndex(request):
@@ -21,5 +22,24 @@ def viewLogin(request):
     return render(request,'login.html')
 
 def viewRegistro(request):
-    return render(request,'registro.html',)
+        if request.method == 'GET':
+            return render(request,'registro.html')
+        else:
+
+            if  request.POST['password1'] == request.POST['password2']:
+            
+                try:
+                    user = User.objects.create_user(correo = request.POST['reg-correo'],password= request.POST['reg-pass']) 
+                    user.save()
+                    print("usuario creado correctamente")
+                        #return redirect('login')
+                
+            
+                
+                except:
+        
+
+                    return HttpResponse('usuario ya existe')
+            return HttpResponse('contraseñas no coinciden')
+
 

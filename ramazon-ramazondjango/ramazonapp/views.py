@@ -26,7 +26,7 @@ def viewRegistro(request):
             return render(request,'registro.html')
         else:
 
-            if  request.POST['password1'] == request.POST['password2']:
+            if  request.POST['reg-pass'] == request.POST['reg-rep-pass']:
             
                 try:
                     user = User.objects.create_user(correo = request.POST['reg-correo'],password= request.POST['reg-pass']) 

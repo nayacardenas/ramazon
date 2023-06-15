@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="Naya, Benja y Marcelo">
+    <title>{% block title %} {% endblock %}</title>
+    {% load static %}
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/csstyle.css'%}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/Logo Rmazon 2.0.jpeg'%}">
+</head>
+<body>
+    <header class="header">
+        <a href="{% url 'index'%}" class="logo">
+            <img src="{% static 'img/Logo Rmazon 2.0.jpeg'%}" alt="logo ramazon">
+        </a>
+        <nav class="navbar">
+            <a href="celulares.html">Smarphones</a>
+            <a href="notebook.html">Computadores</a>
+            <a href="../html/muebles.html">Living</a>
+            <a href="cocina.html">Electrodomesticos</a>
+            <a href="{% url 'libros'%}">Libros</a>
+            <a href="{% url 'tarjeta'%}">Metodo de pago</a>
+            <a href="{% url 'formulario'%}">Contactanos</a>
+            <a href="{% url 'sobreNosotros'%}">Sobre Nosotros </a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <div class="cart-items-container">
+
+
+
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+    </header>
+
+    {% block content%}
+    {% endblock%}
+
+    <footer class="pie-pagina" style="position:absolute;">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="{% static 'img/Logo Rmazon 2.0.jpeg'%}" alt="Logo Ramazon">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2> </h2>
+                <p> </p>
+            </div>
+            <div class="box">
+                <h2> SIGUENOS </h2>
+                <div class="redes-container">
+                    <ul>
+                        <li><a href="https://www.facebook.com/marketplace/item/501284872117807/?ref=search&referral_code=null&referral_story_type=post&tracking=browse_serp%3Ade9458d5-3f0a-4227-93b4-8873d2141bb6"
+                                class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com/ramazonoriginalnofake?igshid=ZDdkNTZiNTM="
+                                class="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/RamazonOriginal?t=CFMO9SAKw-44t2_I9gqgHg&s=08"
+                                class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=w7D-KyuOj_A" class="youtube"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small> © 2023 <b> Ramazon.com </b> - Todos los derechos reservados </small>
+        </div>
+    </footer>
+    {% block script %}
+    {% endblock %}
+    
+</body>
+</html>

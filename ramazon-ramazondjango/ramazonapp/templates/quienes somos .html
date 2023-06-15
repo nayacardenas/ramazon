@@ -1,0 +1,186 @@
+{% extends 'layouts/base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/csstyle.css">
+    <link rel="stylesheet" href="../css/carrusel.css">
+    <link rel ="icon"type="image/x-icon"  href="../img/Logo Rmazon 2.0.png">
+    <link rel="icon" type="image/x-icon" href="../img/Logo Rmazon 2.0.png">
+</head>
+
+<body>
+{% block content %}
+    <section class="home" id="home">
+        <div class="content">
+            <h3> CONOCE LAS SEDES DE RAMAZON </h3>
+            <p>En ramazon contamos con 9 sedes en todo el mundo para asegurar un lo mas envio rapido posible, contamos con nuestra sede mas 
+                nueva Sede Santiago chile, 2 sedes en Estados Unidos en la cuidad de New York y Washinton y una sede en VANCOUSER Canada 
+                y en el continente europeo contamos con tres sedes barcelona ESPAÑA ,ROMA italia y la sede en bristol reino unido y una de las sedes
+                mas antiguas la sede tokio Japon contamos con mas de 30mil colaboradores en todo el mundo.
+            </p>
+
+        </div>
+    </section>
+
+    <!--podria ir un carrusel -->
+    <section class="about" id="about">
+        <h1 class="heading">COMUNIDAD <span> RAMAZON</span> </h1>
+        <div class="row">
+            <div class="image">
+                <img src="{% static 'img/colaboradores.png.png'%}" alt="colaboradores">
+            </div>
+            <div class="content">
+                <h3> </h3>
+                <p>Somos una empresa líder con mas de 30 años de servicio que aspiramos a entregar la mejor experiencia
+                    de compra a nuestros clientes y un fiel compromiso con nuestros trabajadores, mas de 30 mil
+                    trabajadores a nivel mundial, quienes pueden optar a beneficios que la empresa entrega como una
+                    estabilidad laboral promoviendo ambientes laborales que nos permitan alcanzar nuestro máximo
+                    potencial y ser felices.</p>
+                
+
+            </div>
+
+        </div>
+    </section>
+
+    
+
+
+        <section class="review" id="review">
+            <h1 class="heading"> NUESTRAS SEDES <span>EN EL MUNDO</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="{% static 'img/sede2Chi.png'%}" class="user" alt="SEDE ALEMANIA">
+                    <h3>SEDE BERLIN ALEMANIA </h3>
+                    <p>AVENIDA Unter den Linden</p>
+
+                </div>
+                <div class="box">
+                    <img src="{% static 'img/sedeChile.png'%}" class="user" alt="sede Chile">
+                    <h3>sede SANTIAGO chile</h3>
+                    <p>AVENIDA PROVIDENCIA 1225</p>
+                </div>
+                <div class="box">
+                    <img src="{% static 'img/sedeChina.png'%}" class="user" alt="">
+                    <h3>SEDE TOKIO JAPON </h3>
+                    <p>Togoshi Ginza Shotengai</p>
+
+                </div>
+                <div class="box">
+                    <img src="{% static 'img/sedeAlemania.png'%}" class="user" alt="SEDE REINO UNIDO">
+                    <h3>SEDE BRISTOL REINO UNIDO</h3>
+                    <p>CALLE Leicester SQUARE .</p>
+
+                </div>
+                <div class="box">
+                    <img src="{% static 'img/sedewashinton.png'%}" class="user" alt="SEDE CANADA">
+                    <h3>SEDE VANCOUSER CANADA</h3>
+                    <p>Calle Granville 343</p>
+
+                </div>
+                <div class="box">
+                    <img src="{% static 'img/sedeNex.png'%}" class="user" alt="SEDE ESPAÑA">
+                    <h3>SEDE BARCELONA  ESPAÑA </h3>
+                    <P>Gran Avenida La Rambla 899</P>
+
+                </div>
+                <div class="box">
+                    <img src="{% static 'img/sedeReino.png'%}" class="user" alt="SEDE 2 EEUU">
+                    <h3>SEDE NUEVA YORK EUUU</h3>
+                    <p>Avenida Lexington 1345</p>
+
+                </div>
+
+                <div class="box">
+                    <img src="{% static 'img/sedeItalia.png'%}" class="user" alt="SEDE 1 EEUUU">
+                    <h3>SEDE WASHINTON EEUU</h3>
+                    <p>avenida Independencia 557</p>
+
+                </div>
+
+
+                <div class="box">
+                    <img src="{% static 'img/sedeEspaña.png'%}" class="user" alt="SEDE ITALIA">
+                    <h3>SEDE ROMA  ITALIA</h3>
+                    <p>Via Giovan Battista Zannoni 73</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>Encuentranos</span> Aca </h1>
+            <div class="row">
+                <form action="">
+                    <h3>Santiago,Chile</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.9482950648685!2d-70.5158993848027!3d-33.37241588079635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cb4d94552b95%3A0x286c0361c65c38cd!2sLAS%20CONDES%2012725!5e0!3m2!1ses-419!2scl!4v1684039345145!5m2!1ses-419!2scl"
+                        width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+    
+                    
+                </form>
+    
+            </div>
+        </section>
+{% endblock %}
+
+        <!-- Pie de pagina  -->
+    <footer class="pie-pagina" style="position:absolute;">
+        <div class="grupo-1">
+        <div class="box">
+            <figure>
+            <a href="#">
+                <img src="../img/Logo Rmazon 2.0.jpeg" alt="Logo Ramazon">
+            </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>  </h2>
+            <p> </p>
+        </div>
+        <div class="box">
+            <h2> SIGUENOS </h2>
+            <div class="redes-container">
+            <ul>
+                <li><a
+                    href="https://www.facebook.com/marketplace/item/501284872117807/?ref=search&referral_code=null&referral_story_type=post&tracking=browse_serp%3Ade9458d5-3f0a-4227-93b4-8873d2141bb6"
+                    class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://instagram.com/ramazonoriginalnofake?igshid=ZDdkNTZiNTM=" class="instagram"><i
+                    class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/RamazonOriginal?t=CFMO9SAKw-44t2_I9gqgHg&s=08" class="twitter"><i
+                    class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=w7D-KyuOj_A" class="youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <div class="grupo-2">
+        <small> © 2023 <b> Ramazon.com </b> - Todos los derechos reservados </small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous">
+        </script>
+
+
+        <script src="../js/javaprin.js"></script>
+
+</body>
+
+</html>

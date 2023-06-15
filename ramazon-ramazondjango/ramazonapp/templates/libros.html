@@ -1,0 +1,148 @@
+{% extends 'layouts/estructuralibro.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block script %}
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="{% static 'js/carrito.js'%}"></script>
+    <script src="{% static 'js/filtro.js'%}"></script>
+    {% endblock %}
+    <title>libros</title>
+
+</head>
+<body>
+  {% block content %}
+    <aside>
+      <div class="container-sidebar">
+          <h1>Filtros</h1>
+          <div class="contenido-main">
+              <p>categoria</p>
+              <ul>
+                  <li><input type="checkbox" class="category-checkbox" value="libro"> libro</li>
+                  <li><input type="checkbox" class="category-checkbox" value="comic"> comic</li>
+                  <li> <input type="checkbox" class="category-checkbox" value="manga"> manga </li>            
+              </ul>
+              
+          
+      
+      </div>
+  </aside>
+
+
+  
+      
+    <main>
+        <section class="menu" id="menu">
+
+
+            
+              <div class="box-container">
+                <div class="box" data-category="libro">
+                    <img src="{% static 'img/libros/Harry-Potter-y-la-piedra-filosofal-Ravenclaw-i6n17453321.jpg'%}" class="product-image" title="harry potter y la piedra filosofal" alt="portada harry Harry-Potter-y-la-piedra-filosofal-Ravenclaw">
+                    <h3 class="product-name">Harry potter y la piedra filosofal </h3>
+                    <p class="price" >$15.000</p>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+        
+                <div class="box" data-category="libro">
+                    <img src="{% static 'img/libros/61royjw7ITL.jpg'%}" class="product-image" title="juego de tronos cancion de hielo y fuego "alt="juego de tronos cancion de hielo y fuego">
+                    <h3 class="product-name">juego de tronos libro 1</h3>
+                    <div class="price">$10.000 </div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>             
+                <div class="box"   data-category="comic" >
+                    <img src="{% static 'img/libros/OIP.jpeg'%}" class="product-image" title="Amazing Fantasy Volumen #15" alt="Amazing Fantasy Volumen #15">
+                    <h3 class="product-name">Amazing fantasy volumen 15</h3>
+                    <div class="price">$8.000</div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                
+                <div class="box"  data-category="comic" >
+                    <img src="{% static 'img/libros/OIP 2.jpeg'%}" class="product-image" title="Spider man volumen #800" alt="Spider man volumen #800">
+                    <h3 class="product-name">The amazing spiderman #800</h3>
+                    <div class="price">$12.000</div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                
+                <div class="box"  data-category="comic" >
+                    <img src="{% static 'img/libros/Injustice_AnoUno_Integral.jpg'%}" class="product-image" title="Injustice Año uno" alt="Injustice Año uno">
+                    <h3 class="product-name">Injustice year one </h3>
+                    <div class="price">$30.000 </div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                
+                <div class="box"   data-category="comic">
+                    <img src="{% static 'img/libros/Invincible.jpg'%}" class="product-image" title="Invencible volumen #1" alt="Invencible volumen #1">
+                    <h3 class="product-name">invencible volumen 1</h3>
+                    <div class="price">$5.000 </div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                <div class="box"   data-category="comic">
+                    <img src="{% static 'img/libros/theboys.jpg'%}" class="product-image" title="the boys volumen #1" alt="the boys volumen #1">
+                    <h3 class="product-name">The boys volumen 1 </h3>
+                    <div class="price">$15.000</div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                
+                <div class="box"   data-category="manga">
+                    <img src="{% static 'img/libros/bokunohero.jpg'%}" class="product-image" title="My hero academia tomo #1" alt="My hero academia tomo #1">
+                    <h3 class="product-name">My hero academia   </h3>
+                    <div class="price">$22.000 </div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                
+                <div class="box"  data-category="manga">
+                    <img src="{% static 'img/libros/6djs1vq06ep51.jpg'%}" class="product-image" title="Blue lock tomo #11" alt="Blue lock tomo #11">
+                    <h3 class="product-name">blue lock </h3>
+                    <div class="price">$25.000 </div>
+                    <button class="btn">Agregar al Carrito</button>
+                </div>
+                <div class="box"  data-category="libro">
+                  <img src="{% static 'img/libros/juegodetronos2.jpeg'%}" class="product-image" title="juego de tronos libro 2" alt="juego de tronos libro 2">
+                  <h3 class="product-name">juego de tronos libro 2</h3>
+                  <div class="price">$10.000 </div>
+                  <button class="btn">Agregar al Carrito</button>
+                </div>
+                <div class="box"  data-category="libro">
+                  <img src="{% static 'img/libros/juegosdelhambre.jpeg'%}" class="product-image" title="los juegos del hambre" alt="los juegos del hambre">
+                  <h3 class="product-name">los juegos del hambre</h3>
+                  <div class="price">$15.000 </div>
+                  <button class="btn">Agregar al Carrito</button>
+                </div>
+                
+                <div class="box"  data-category="libro">
+                  <img src="{% static 'img/libros/harrypotter2.png'%}" class="product-image" title="Harry potter y la camara secreta" alt="Harry potter y la camara secreta">
+                  <h3 class="product-name">Harry potter y la camara secreta</h3>
+                  <div class="price">$15.000 </div>
+                  <button class="btn">Agregar al Carrito</button>
+                </div>
+                <div class="box"  data-category="manga">
+                  <img src="{% static 'img/libros/chainsawman.jpeg'%}" class="product-image" title="Chainsaw man" alt="Chainsaw man">
+                  <h3 class="product-name">Chainsaw man</h3>
+                  <div class="price">$15.000 </div>
+                  <button class="btn">Agregar al Carrito</button>
+                </div>
+                <div class="box"  data-category="manga">
+                  <img src="{% static 'img/libros/onepiece.jpeg'%}" class="product-image" title="One piece " alt="One piece ">
+                  <h3 class="product-name">One piece </h3>
+                  <div class="price">$15.000 </div>
+                  <button class="btn">Agregar al Carrito</button>
+                </div>
+                <div class="box"  data-category="manga">
+                  <img src="{% static 'img/libros/jujutsu-kaisen-1-cat-300x458.jpg'%}" class="product-image" title="jujutsu kaisen" alt="jujutsu kaisen">
+                  <h3 class="product-name">jujutsu kaisen </h3>
+                  <div class="price">$15.000 </div>
+                  <button class="btn">Agregar al Carrito</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    {% endblock %}
+    
+</body>
+</html>

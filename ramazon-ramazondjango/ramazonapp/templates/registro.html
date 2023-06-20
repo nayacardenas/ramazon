@@ -19,41 +19,35 @@
             </div>
         
         <div class="form-content">
-            <form name="Registro" class="cod-form" id="Registro" action="{% url 'login'%}" method="post">
+            <form name="registro" class="cod-form" id="Registro" action="" method="post">
                 {% csrf_token %}
-                <div class="form-title">
-                    <h3>Regístrate </h3>
-                </div>
-                
                 <div class="input-group">
-                    <input type="name" class="form-input" name="reg-name" id="reg-name" required autofocus>
-                    <label class="label" for="reg-name">Nombres</label>
+                    <input type="name" class="form-input" name="nombre" id="reg-name" required autofocus>
+                    <label class="label" for="reg-name">nombre</label>
                 </div>
                 <div class="input-group">
-                    <input type="apellidos" class="form-input" name="reg-apellidos" id="reg-apellidos" required>
-                    <label class="label" for="reg-apellidos">Apellidos</label>
+                    <input type="name" class="form-input" name="apellido" id="reg-apellidos" required>
+                    <label class="label" for="reg-apellidos">apellido</label>
                 </div>
                 <div class="input-group">
-                    <input type="email" class="form-input" name="reg-correo" id="reg-correo" required>
-                    <label class="label" for="reg-correo">Correo</label>
+                    <input type="email" class="form-input" name="correo" id="reg-correo" required>
+                    <label class="label" for="reg-correo">correo</label>
                 </div>
                 <div class="input-group">
-                    <input type="password" class="form-input" name="reg-pass" id="reg-pass" required>
-                    <label class="label" for="reg-pass">Contraseña</label>
+                    <input type="password" class="form-input" name="password1" id="reg-pass" required>
+                    <label class="label" for="reg-pass">contraseña</label>
                 </div>
                 <div class="input-group">
-                    <input type="password" class="form-input" name="reg-rep-pass" id="reg-rep-pass"required>
-                    <label class="label" for="reg-rep-pass">Repetir Contraseña</label>
+                    <input type="password" class="form-input" name="password2" id="reg-rep-pass" required>
+                    <label class="label" for="reg-rep-pass">repetir contraseña</label>
                 </div>
-
+            
                 <div class="input-group">
                     <input type="submit" class="form-input" value="Registrate">
                     <p>Ya tienes cuenta? <a href="{% url 'login'%}" class="alt-form">Ingresa aquí</a></p>
                 </div>
-
             </form>
 
         </div>
-    </div>
 </body>
 </html>

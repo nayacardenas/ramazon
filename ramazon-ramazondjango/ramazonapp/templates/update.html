@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actualizar</title>
+</head>
+<body>
+    {% if producto %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <input type="submit" value = "Update">
+    </form>
+    {% endif %}
+    
+    <button type="button">
+        <a href="{% url 'read'%}">volver a panel admin</a>
+    </button>
+    
+</body>
+</html>

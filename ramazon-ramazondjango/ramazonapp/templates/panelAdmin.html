@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanelAdmin</title>
+</head>
+<body>
+    <h1>Productos</h1>
+    <br>
+    <button type="button">
+        <a href="{% url 'create'%}">
+            agregar
+        </a>
+        
+    </button>
+    <div id = "idMensajes">
+      {% if mensaje %}
+        {{mensaje}}
+      {% endif %}
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>descripcion</th>
+          <th>cantidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for producto in productos %}
+          <tr>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.descripcion }}</td>
+            <td>{{ producto.cantidad }}</td>
+            <td> <a href="{% url 'delete' pk=producto.id_product%}">eliminar</a></td>
+            <td> <a href="{% url 'update' pk=producto.id_product%}">actualizar</a></td>
+            <td>
+            </td>
+          </tr>
+          {% endfor %}
+
+      </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#idMensajes").delay(2000).fadeOut("slow");
+
+      });
+    </script>
+  </body>
+</html>

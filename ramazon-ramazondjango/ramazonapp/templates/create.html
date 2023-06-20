@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agregar producto</title>
+</head>
+<body>
+    <form action ="" method="post">
+        {% csrf_token %}
+        {{form.as_table}}
+        <input type="submit" value="agregar">
+        
+        
+    </form>
+    <div id = "idMensajes">
+        {% if mensaje %}
+            {{mensaje}}
+        {% endif %}
+    </div>
+    <br>
+    <a href="{% url 'read'%}">volver</a>
+    
+</body>
+</html>

@@ -20,10 +20,10 @@
             <img src="{% static 'img/Logo Rmazon 2.0.jpeg'%}" alt="logo ramazon">
         </a>
         <nav class="navbar">
-            <a href="celulares.html">Smarphones</a>
-            <a href="notebook.html">Computadores</a>
-            <a href="../html/muebles.html">Living</a>
-            <a href="cocina.html">Electrodomesticos</a>
+            <a href="{% url 'celulares'%}">Smarphones</a>
+            <a href="{% url 'compus'%}">Computadores</a>
+            <a href="{% url 'muebles'%}">Living</a>
+            <a href="{% url 'cocina'%}">Electrodomesticos</a>
             <a href="{% url 'libros'%}">Libros</a>
             <a href="{% url 'tarjeta'%}">Metodo de pago</a>
             <a href="{% url 'formulario'%}">Contactanos</a>

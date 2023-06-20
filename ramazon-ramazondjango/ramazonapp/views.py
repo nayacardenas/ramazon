@@ -84,6 +84,19 @@ def delete(request, pk):
 def viewIndex(request):
     return render(request,'menu.html')
 
+def verCelus(request):
+    return render(request,'celulares.html')
+
+def verMuebles(request):
+    return render(request,'muebles.html')
+
+def verNotebooks(request):
+    return render(request,'notebook.html')
+
+def verCocina(request):
+    return render(request,'cocina.html')
+
+
 def viewAboutus(request):
     return render(request,'quienes somos .html')
 

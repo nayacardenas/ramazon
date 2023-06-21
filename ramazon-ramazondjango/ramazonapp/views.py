@@ -41,13 +41,14 @@ def update(request, pk):
             if request.method == 'POST':
                 form = ProductForm(request.POST,instance=producto)
                 form.save()
-                context = {'producto':producto, 'form':form}
+                mensaje = "datos actualizados"
+                context = {'producto':producto, 'form':form,'mensaje':mensaje}
                 return render(request,'update.html',context)
             else:
                 print("no es un post")
                 form = ProductForm(instance=producto)
                 context = {'producto':producto,'form':form}
-                return render(request,'update.html')
+                return render(request,'update.html',context)
     except:
         print("algo salio mal")
         productos = Product.objects.all()

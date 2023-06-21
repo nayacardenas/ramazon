@@ -13,10 +13,14 @@
         <input type="submit" value = "Update">
     </form>
     {% endif %}
+    <div id ="idMensajes">
+        {% if mensaje %}
+            {{ mensaje }}
+        {% endif %}
+    </div>
     
-    <button type="button">
+
         <a href="{% url 'read'%}">volver a panel admin</a>
-    </button>
     
 </body>
 </html>

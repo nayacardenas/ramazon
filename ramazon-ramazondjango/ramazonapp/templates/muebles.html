@@ -2,6 +2,7 @@
 {% load static %}
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,79 +10,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muebles</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/csstyle.css">
-    <link rel="stylesheet" href="../css/carrusel.css">
     <link rel="icon" type="image/x-icon" href="../img/Logo Rmazon 2.0.png">
 </head>
 <body>
 {% block content%}
-    <h1>Muebles y Living</h1>
-
-    <div class="container">
-        <br>
-        <div id="theCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-                <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#theCarousel" data-slide-to="1"></li>
-                <li data-target="#theCarousel" data-slide-to="2"></li>
-                <li data-target="#theCarousel" data-slide-to="3"></li>
-
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="{% static 'img/libros.png.jpg'%}" alt="Ilustracion" width="100" height="100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
-
-                
-
-                <div class="item">
-                    <img src="{% static 'img/tecnoslider.png.png'%}" alt="fotografia" width="600" height="424">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3> </h3>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="{% static 'img/muebles.jpg'%}" alt="pintura" width="100" height="100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="{% static 'img/noteslider.png.png'%}" alt="diseno" width="100" height="100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
-
-
-                <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">anterior</span>
-                </a>
-                <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">siguiente</span>
-                </a>
-            </div>
-        </div>
 
     <section class="menu" id="menu">
 
-
-        <h1 class="heading">our <span>menu </span> </h1>
+        <br>
+        <h1 class="heading">muebles </h1>
     
         <div class="box-container">
             <div class="box">
@@ -113,28 +51,28 @@
             </div>
     
             <div class="box">
-                <img src="../img/cama plazaymedia.jpg" alt="Cama">
+                <img src="{%static 'img/cama plazaymedia.jpg'%}" alt="Cama">
                 <h3>Cama Plaza Y Media </h3>
                 <div class="price">$569.000 <span>799.990</span></div>
                 <a href="#" class="btn">agregar al carrito </a>
             </div>
     
             <div class="box">
-                <img src="../img/ropero.jpg" alt="Ropero">
+                <img src="{%static 'img/ropero.jpg'%}" alt="Ropero">
                 <h3>Ropero </h3>
                 <div class="price">$569.000 <span>799.990</span></div>
                 <a href="#" class="btn">agregar al carrito </a>
             </div>
 
             <div class="box">
-                <img src="../img/estantes tv.jpg" alt="Estantes">
+                <img src="{% static 'img/estantes tv.jpg'%}" alt="Estantes">
                 <h3>Estante Para Pantalla Plana </h3>
                 <div class="price">$569.000 <span>799.990</span></div>
                 <a href="#" class="btn">agregar al carrito </a>
             </div>
 
             <div class="box">
-                <img src="../img/espejo pared.jpeg" alt="Espejo">
+                <img src="{% static 'img/espejo pared.jpeg'%}" alt="Espejo">
                 <h3>Espejo De Pared </h3>
                 <div class="price">$569.000 <span>799.990</span></div>
                 <a href="#" class="btn">agregar al carrito </a>
@@ -144,6 +82,8 @@
     </section>
 {% endblock %}
     {% block script%}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>

@@ -113,9 +113,33 @@ def viewBooks(request):
 def viewLogin(request):
     return render(request,'login.html')
 
-
+def viewCelu1(request):
+    return render(request,'celu1.html')
 
 
 def viewRegistro(request):
     return render(request,'registro.html')
 
+def viewCelu2(request):
+    return render(request,'celu2.html')
+
+def viewCelu3(request):
+    return render(request,'celu3.html')
+
+def viewCelu4(request):
+    return render(request,'celu4.html')
+
+def viewCelu5(request):
+    return render(request,'celu5.html')
+
+def viewCelu6(request):
+    return render(request,'celu6.html')
+
+def viewCelu7(request):
+    return render(request,'celu7.html')
+
+def viewCelu8(request):
+    return render(request,'celu8.html')
+
+def viewCelu9(request):
+    return render(request,'celu9.html')

@@ -13,6 +13,15 @@ urlpatterns = [
     path('notebooks/',views.verNotebooks, name='compus'),
     path('muebles/',views.verMuebles, name='muebles'),
     path('cocina/',views.verCocina, name='cocina'),
+    path('celu1/',views.viewCelu1, name='celu1'),
+    path('celu2/',views.viewCelu1, name='celu2'),
+    path('celu3/',views.viewCelu1, name='celu3'),
+    path('celu4/',views.viewCelu1, name='celu4'),
+    path('celu5/',views.viewCelu1, name='celu5'),
+    path('celu6/',views.viewCelu1, name='celu6'),
+    path('celu7/',views.viewCelu1, name='celu7'),
+    path('celu8/',views.viewCelu1, name='celu8'),
+    path('celu9/',views.viewCelu1, name='celu9'),
     
 
     path('create/',views.create, name = 'create'),

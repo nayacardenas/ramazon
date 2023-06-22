@@ -313,7 +313,7 @@ section{
     grid-gap:1em;
     padding-left: 10rem;
     padding-right: 10rem;
-    padding-bottom: 50%;
+    padding-bottom: 40%;
     
 }
 
@@ -334,6 +334,7 @@ section{
 }
 
 .pie-pagina {
+    margin-top: 25;
     padding-left: 0;
     width: 100%;
     background-color: #0a141d;

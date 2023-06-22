@@ -143,3 +143,30 @@ def viewCelu8(request):
 
 def viewCelu9(request):
     return render(request,'celu9.html')
+
+def viewNote1(request):
+    return render(request,'note1.html')
+
+def viewNote2(request):
+    return render(request,'note2.html')
+
+def viewNote3(request):
+    return render(request,'note3.html')
+
+def viewNote4(request):
+    return render(request,'note4.html')
+
+def viewNote5(request):
+    return render(request,'note5.html')
+
+def viewNote6(request):
+    return render(request,'note6.html')
+
+def viewNote7(request):
+    return render(request,'note7.html')
+
+def viewNote8(request):
+    return render(request,'note8.html')
+
+def viewNote9(request):
+    return render(request,'note9.html')

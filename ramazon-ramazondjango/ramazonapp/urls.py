@@ -22,6 +22,15 @@ urlpatterns = [
     path('celu7/',views.viewCelu1, name='celu7'),
     path('celu8/',views.viewCelu1, name='celu8'),
     path('celu9/',views.viewCelu1, name='celu9'),
+    path('note1/',views.viewNote1, name='note1'),
+    path('note2/',views.viewNote1, name='note2'),
+    path('note3/',views.viewNote1, name='note3'),
+    path('note4/',views.viewNote1, name='note4'),
+    path('note5/',views.viewNote1, name='note5'),
+    path('note6/',views.viewNote1, name='note6'),
+    path('note7/',views.viewNote1, name='note7'),
+    path('note8/',views.viewNote1, name='note8'),
+    path('note9/',views.viewNote1, name='note9'),
     
 
     path('create/',views.create, name = 'create'),

@@ -19,4 +19,5 @@ class Product(models.Model):
     cantidad = models.IntegerField(null=False)
 
     def __str__(self):
-        return self.nombre
+        texto = "{0} ({1})"
+        return texto.format(self.nombre, self.cantidad)

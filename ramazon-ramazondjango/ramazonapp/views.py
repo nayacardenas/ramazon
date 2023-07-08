@@ -1,7 +1,8 @@
 from django.http import Http404
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import *
 from .forms import *
+from django.contrib import messages
 
 
 
@@ -67,13 +68,10 @@ def delete(request, pk):
             context = {'productos':productos}
             return render(request,'panelAdmin.html',context)
     except:
-        print("algo malio sal")
-        
-        
+        print("algo salio mal")
 
 
 
-            
 
     
 
@@ -102,7 +100,21 @@ def viewAboutus(request):
     return render(request,'quienes somos .html')
 
 def viewForm(request):
-    return render(request,'formulario.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            messages.success(request,'el formulario se ha enviado correctamente')
+            return redirect('formulario')
+            
+            
+
+    else:
+        form = ContactForm()
+
+    return render(request, 'formulario.html', {'form': form})
+
+def viewFormsent(request):
+    return render(request,"formEnviado.html")
 
 def viewCard(request):
     return render(request,'tarjeta.html')

@@ -21,3 +21,4 @@ class Product(models.Model):
     def __str__(self):
         texto = "{0} ({1})"
         return texto.format(self.nombre, self.cantidad)
+    

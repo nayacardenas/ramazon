@@ -496,6 +496,7 @@ section{
 }
 
 .pie-pagina {
+    bottom: 0;
     padding-left: 0;
     width: 100%;
     background-color: #0a141d;
